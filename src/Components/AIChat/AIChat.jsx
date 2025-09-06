@@ -5,6 +5,7 @@ import axios from 'axios';
 import ChatFormComp from '../FormComponent/ChatFormComp';
 
 const lechatApiKey = import.meta.env.VITE_LECHAT_API_KEY;
+console.log(lechatApiKey);
 
 const DEFAULT_PROMPT =
   "From this moment, you will speak only about food habits. On the first user query, briefly introduce yourself and shortly explain that you will discuss food habits. For every subsequent request, give detailed, comprehensive answers—strictly on the topic of food habits. If the user asks about anything else, acknowledge that you only talk about food habits and then continue with a detailed food‑habits reply.";
