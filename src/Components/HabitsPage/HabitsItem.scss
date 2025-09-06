@@ -1,0 +1,114 @@
+.habit-card {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  min-width: 600px;
+}
+
+.habit-card.completed {
+  background: linear-gradient(145deg, #d4edda, #c3e6cb);
+}
+
+.habit-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-card-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.habit-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.habit-description {
+  margin: 0.75rem 0;
+  color: #555;
+}
+
+.habit-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.habit-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.habit-toggle input[type='checkbox'] {
+  transform: scale(1.3);
+  accent-color: #28a745;
+}
+
+.habit-remove {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.habit-remove:hover {
+  background-color: #c82333;
+}
+
+.habits-dashboard {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.habits-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.habits-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.habits-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.habits-content {
+  flex: 1.3;
+  min-width: 300px;
+}
+
+.habits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habits-ai {
+  margin-top: 16px;
+  flex: 1;
+  min-width: 300px;
+}
