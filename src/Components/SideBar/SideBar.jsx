@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link } from 'react-router';
-import '../../App.css';
+import './SideBar.scss';
 
 
 
@@ -10,13 +10,13 @@ function Sidebar() {
     <nav className="sidebar">
       <ul>
         <li>
-          <Link to="/habits">Habits</Link>
+          <Link className='sidebar-link' to="/habits">Habits</Link>
         </li>
         <li>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link className='sidebar-link' to="/dashboard">Dashboard</Link>
         </li>
         <li>
-          <Link to="/ai">AI Chat</Link>
+          <Link className='sidebar-link' to="/ai">AI Chat</Link>
         </li>
       </ul>
     </nav>

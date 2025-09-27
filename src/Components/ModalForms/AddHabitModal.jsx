@@ -3,6 +3,7 @@ import { Button, Modal } from 'antd';
 import FormComp from '../FormComponent/FormComp';
 import { useDispatch } from 'react-redux';
 import { addHabit } from '../../store/habitsSlice';
+import './AddHabitModal.scss'
 
 
 const AddHabitModal = () => {
@@ -20,7 +21,7 @@ const AddHabitModal = () => {
   };
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      <Button className='form-call' type='primary'  onClick={showModal}>
         Add Habit
       </Button>
       <Modal

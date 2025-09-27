@@ -35,7 +35,7 @@ const CaloriesGraphic = () => {
         <Tooltip />
         <Legend />
         <CartesianGrid strokeDasharray="3 3" />
-        <Bar dataKey="amount" fill="#8884d8" background={{ fill: '#eee' }} />
+        <Bar dataKey="amount" fill="#ff4800" background={{ fill: '#eee' }} />
       </BarChart>
     </ResponsiveContainer>
   );

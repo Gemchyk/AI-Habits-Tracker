@@ -113,13 +113,13 @@ function AIChat() {
   };
 
   return (
-    <div className="ai-chat">
-      <div className="chat-window">
-        <div className="messages" ref={messagesContainerRef}>
+    <div className="ai-window">
+      <div className="ai-chat-window">
+        <div className="ai-messages" ref={messagesContainerRef}>
           {messages.map((msg, idx) => (
             <div
               key={idx}
-              className={`message ${msg.role}`}
+              className={`ai-message ${msg.role}`}
             >
               {msg.content}
             </div>
@@ -129,7 +129,7 @@ function AIChat() {
         <div className="input-section">
           <ChatFormComp handleSubmit={handleSubmit} />
         </div>
-        {isLoading && <div className="loading-text">Thinking...</div>}
+        {isLoading && <div className="ai-loading">Thinking...</div>}
       </div>
     </div>
   );

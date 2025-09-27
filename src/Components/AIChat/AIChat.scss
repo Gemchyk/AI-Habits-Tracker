@@ -1,65 +1,58 @@
-.ai-chat {
+.ai-window {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #333;
+  gap: 1rem;
+}
 
-  .chat-window {
-    width: 600px;
-    height: 750px;
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
+.ai-chat-window {
+  width: 500px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
 
-  .messages {
-    flex: 1;
-    overflow-y: auto;
-    background: #f6f8fa;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    scrollbar-width: inherit;
-    scrollbar-color: #004a99 #e6f0ff;
-  }
+.ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-  .message {
-    border-radius: 12px;
-    margin: 20px;
-    padding: 0.75rem 1.25rem;
-    max-width: 80%;
-    font-size: 0.95rem;
+.ai-message {
+  align-self: flex-start;
+  background: #fde1cd; // очень светлый оттенок оранжевого
+  color: #ff5100;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 80%;
+  box-shadow: 0 2px 4px rgba(255, 107, 0, 0.1);
+}
 
-    &.user {
-      align-self: flex-end;
-      background: #f1f2ff;
-      color: #333;
-      text-align: right;
-      border: 1px solid #c3c7ff;
-    }
+.ai-message.user {
+  align-self: flex-end;
+  background: #f0f0f0;
+  color: #2d2d2d;
+}
 
-    &.assistant {
-      align-self: flex-start;
-      background: #e6f0ff;
-      color: #004a99;
-      text-align: left;
-      border: 1px solid #f0f0f0;
-    }
-  }
-
-  .input-section {
+.ai-loading {
+  text-align: center;
+  color: #999;
+  padding: 0.75rem;
+  font-style: italic;
+}
+.input-section {
     padding: 0.75rem;
     background: #ffffff;
     border-top: 1px solid #eee;
   }
-
-  .loading-text {
-    text-align: center;
-    color: #999;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-  }
-}

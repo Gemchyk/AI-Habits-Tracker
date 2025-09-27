@@ -1,0 +1,17 @@
+.form-call {
+  min-height: 40px;
+  align-self: flex-start;
+  padding: 12px 24px;
+  background-color: #FF6B00;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #e55a00 !important;
+  }
+}

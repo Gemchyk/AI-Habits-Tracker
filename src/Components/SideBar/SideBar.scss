@@ -1,0 +1,31 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #ff9d56b2;
+  color: #fff;
+  padding-top: 2rem;
+  z-index: 100;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sidebar li.active, .sidebar li:hover {
+  background: #ff8b39b2;
+}
+
+.sidebar-link{
+    color: #ff5100;
+
+    &:hover{
+        color: #ff5100;
+    }
+}
