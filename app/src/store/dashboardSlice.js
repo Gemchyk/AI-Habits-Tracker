@@ -8,7 +8,6 @@ const initialState = [
     { name: 'Page E', amount: 1 },
     { name: 'Page F', amount: 1 },
     { name: 'Page G', amount: 1 },
-  
 ];
 
 
