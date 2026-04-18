@@ -26,8 +26,6 @@ async function startServer(){
 }
 
 
-//TODO: Write a post and get endpoints and finish services, routes and controllers
-
 startServer();
 
 

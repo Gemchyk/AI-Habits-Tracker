@@ -7,21 +7,7 @@ const initialState = [
   { role: "system", content: DEFAULT_PROMPT },
 ];
 
-export const addMessage = createAsyncThunk(
-  'history/messages', 
-  async (message, {rejectWithValue}) => {
-    try{
-      const res = await fetch('http://localhost:5050/history/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message }),
-      });
-    }catch(err){
-      return rejectWithValue(err.message || 'Network error');
-    }
-});
+
 
 const aiStorageSlice = createSlice({
     name: 'dashboard',

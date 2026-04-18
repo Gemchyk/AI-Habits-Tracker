@@ -4,8 +4,40 @@ import { DEFAULT_PROMPT } from '../../store/aiStorageslice';
 import axios from 'axios';
 // import { useSelector } from 'react-redux';
 
-console.log(import.meta);
 const lechatApiKey = import.meta.env.VITE_LECHAT_API_KEY;
+
+
+const fetchConvHistory = async () => {
+    try{
+      const res = await fetch('http://localhost:5050/history/messages', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
+    }catch(e){
+      console.log(e);
+    }
+}
+
+const addMessageToHistory = async (message) => {
+    try{
+      const res = await fetch('http://localhost:5050/history/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({message})
+      });
+    }catch(e){
+      console.log(e);
+    }
+}  
+
+// addMessageToHistory(DEFAULT_PROMPT);
+ 
+console.log(fetchConvHistory());
+//TODO: fix returning undefined result
 
 
 const conversationHistory = [

@@ -1,13 +1,13 @@
 import {getDB} from '../db/index.js'
 
-export async function testAddMessage(){
+export async function testAddMessage(message){
   try{
     const db = await getDB();
     const collection = db.collection('ConversationHistory');
 
     const result = await collection.insertOne({
     role: "user",
-    content: "test"
+    content: message
   });
   } catch(e) {
     console.log(e);
