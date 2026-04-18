@@ -1,13 +1,13 @@
 import {getDB} from '../db/index.js'
 
-export async function testAddMessage(){
+export async function testAddMessage(message){
   try{
-    const db = getDB();
+    const db = await getDB();
     const collection = db.collection('ConversationHistory');
 
     const result = await collection.insertOne({
     role: "user",
-    content: "test"
+    content: message
   });
   } catch(e) {
     console.log(e);
@@ -16,7 +16,7 @@ export async function testAddMessage(){
 
 export async function testGetHistory(){
   try{
-    const db = getDB();
+    const db = await getDB();
     const collection = db.collection('ConversationHistory');
 
     const result = await collection.find().toArray();
@@ -29,4 +29,3 @@ export async function testGetHistory(){
 }
 
 
-testGetHistory(); //Probably works but I can't prove it 
